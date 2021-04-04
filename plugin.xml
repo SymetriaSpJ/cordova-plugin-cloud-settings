@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
         xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
         id="cordova-plugin-cloud-settings"
         version="1.0.4">
 
@@ -44,6 +45,7 @@
                     android:backupAgent="cordova.plugin.cloudsettings.BackupAgentHelper"
                     android:fullBackupOnly="true"
                     android:fullBackupContent="@xml/backup_rules"
+                    tools:replace="android:fullBackupContent"
             />
         </edit-config>
 
@@ -75,6 +77,6 @@
         <header-file src="src/ios/CloudSettingsPlugin.h"/>
         <source-file src="src/ios/CloudSettingsPlugin.m"/>
 
-        
+
     </platform>
 </plugin>
