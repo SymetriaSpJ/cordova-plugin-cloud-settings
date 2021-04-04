@@ -39,6 +39,10 @@
             <meta-data android:name="com.google.android.backup.api_key" android:value="$ANDROID_BACKUP_SERVICE_KEY" />
         </config-file>
 
+        <edit-config file="app/src/main/AndroidManifest.xml" target="/manifest" mode="merge">
+            <manifest xmlns:tools="http://schemas.android.com/tools" />
+        </edit-config>
+
         <edit-config file="app/src/main/AndroidManifest.xml" target="/manifest/application" mode="merge">
             <application
                     android:allowBackup="true"
