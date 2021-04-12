@@ -45,11 +45,8 @@
 
         <edit-config file="app/src/main/AndroidManifest.xml" target="/manifest/application" mode="merge">
             <application
-                    android:allowBackup="true"
                     android:backupAgent="cordova.plugin.cloudsettings.BackupAgentHelper"
                     android:fullBackupOnly="true"
-                    android:fullBackupContent="@xml/backup_rules"
-                    tools:replace="android:fullBackupContent"
             />
         </edit-config>
 
